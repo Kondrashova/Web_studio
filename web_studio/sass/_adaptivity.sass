@@ -1,0 +1,173 @@
+@import "variable"
+.adaptivity
+    margin: 0 auto
+    padding: 160px 0
+    .container
+        padding: 0
+        &::before
+            position: absolute
+            content: "Adaptate"
+            +tah
+            font-weight: 700
+            letter-spacing: 3.6px
+            font-size: 70px
+            color: #000
+            opacity: 0.19
+            text-transform: uppercase
+            top: 0
+            left: 70px
+        
+    &__bigwrap
+        display: flex
+        .adaptivity__wrapper
+            display: flex
+            flex-direction: column
+            width: 665px
+            padding: 0 0px 0 124px
+            margin-right: 170px
+            .adaptivity__title
+                +title
+                font-size: 30px
+                text-transform: uppercase
+            .adaptivity__text
+                width: 550px
+                +arial
+                font-size: 24px
+                line-height: 48px
+                letter-spacing: 1.2px   
+        .adaptivity__block-img
+            position: relative
+            //right: -100px
+            display: flex
+            //flex-direction: column    
+            .adaptivity__img
+                max-width: 685px
+                width: 100%
+
+@media (max-width: 1499px)
+      .adaptivity
+            &__bigwrap
+                align-items: flex-end                
+            &__block-img
+                min-height: 340px
+                
+
+@media (max-width: 1200px)
+    .adaptivity
+        .container
+            &::before
+                letter-spacing: 3.6px
+                font-size: 70px
+                top: 0
+                left: 70px
+
+        &__bigwrap
+            align-items: flex-end
+            .adaptivity__wrapper
+                margin-right: 50px
+                .adaptivity__text
+                    font-size: 20px
+                    line-height: 1.5
+                    width: 400px
+        &__block-img
+            min-height: 340px
+            min-width: 350px  
+            .adaptivity__img
+                min-width: 350px
+
+@media (max-width: 992px)
+    .adaptivity
+        padding-top: 50px
+        padding-bottom: 50px
+        .container
+            &::before
+                letter-spacing: 3.6px
+                font-size: 50px
+                top: 5px
+                left: 70px
+
+        &__bigwrap
+            align-items: flex-end
+            .adaptivity__wrapper
+                margin-right: 50px
+                
+                .adaptivity__title
+                    font-size: 24px
+                    line-height: 1.5
+                .adaptivity__text
+                    font-size: 18px
+                    line-height: 1.2
+                    width: 400px
+        &__block-img
+            min-height: 150px
+            min-width: 100px  
+            .adaptivity__img
+                min-width: 100px 
+
+@media (max-width: 768px)
+    .adaptivity
+        padding-top: 50px
+        padding-bottom: 50px
+        .container
+            &::before
+                letter-spacing: 3.6px
+                font-size: 40px
+                top: 5px
+                left: 30px
+
+        &__bigwrap
+            align-items: flex-end
+            .adaptivity__wrapper
+                margin-right: 50px
+                padding-left: 54px
+                
+                .adaptivity__title
+                    font-size: 24px
+                    line-height: 1.5
+                .adaptivity__text
+                    font-size: 18px
+                    line-height: 1.2
+                    width: 300px
+        &__block-img
+            min-height: 150px
+            min-width: 150px  
+            .adaptivity__img
+                min-width: 150px 
+
+@media (max-width: 567px)
+    .adaptivity
+        padding-top: 50px
+        padding-bottom: 50px
+        .container
+            &::before
+                letter-spacing: 3.6px
+                font-size: 28px
+                top: 5px
+                left: 90px
+
+        &__bigwrap
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .adaptivity__wrapper
+                margin-right: 0
+                padding-left: 0
+                width: 300px
+                align-items: center
+                .adaptivity__title
+                    font-size: 18px
+                    line-height: 1.5
+                .adaptivity__text
+                    font-size: 12px
+                    line-height: 1.2
+                    width: 300px
+        &__block-img
+            height: 180px
+            width: 200px  
+            .adaptivity__img
+                width: 200px 
+
+                      
+                  
+              
+

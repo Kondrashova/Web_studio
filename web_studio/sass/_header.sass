@@ -1,0 +1,246 @@
+@import "variable"
+.header
+    .hero
+        .container
+            //max-width: 1360px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        position: relative
+        z-index: 5
+        color: $fontColor-light
+        +desc
+        padding-top: 205px
+        padding-bottom: 120px
+        background: url("../img/hero/hero-bg.png")
+        background-size: 100% 100%
+        background-repeat: no-repeat
+         
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background: url("../img/hero/bg.png") center center
+            z-index: 3
+        &-wrapTitle
+           display: flex
+           flex-direction: column
+           justify-content: center
+           align-items: center        
+        &__title
+            display: flex
+            font-size: 48px
+            font-weight: 400
+            color: #fff
+            +title
+            text-transform: uppercase
+            width: 1100px
+            text-align: center
+            line-height: 72px
+            letter-spacing: 2.4px
+            //margin: auto
+            
+        &__description
+            display: flex
+            +desc
+            font-size: 24px
+            line-height: 36px
+            letter-spacing: 1.2px
+            width: 850px
+            text-align: center
+            margin-bottom: 70px
+            
+        &-wrap
+            display: flex
+            position: relative
+            justify-content: space-between
+            vertical-align: center
+            width: 860px
+            text-align: center
+            margin: auto
+            &__feature-block
+                position: relative
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 250px
+                height: 160px
+                border: 2px solid #fff
+                border-top: none    
+                text-align: center
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    height: 2px
+                    width: 39%
+                    background-color: #fff
+                    z-index: 3
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 0
+                    right: 0
+                    height: 2px
+                    width: 39%
+                    background-color: #fff
+                    z-index: 3    
+            &__text
+                font-size: 18px
+                span
+                    +title
+                    font-size: 48px
+                    font-weight: 400
+                    line-height: 60px
+                    letter-spacing: 2.4px
+
+            .feature__img
+                position: absolute
+                top: -18px
+    .navbar
+        border-bottom: 2px solid
+        border-color: rgba(0,0,0,0.32)
+        &__menu
+            display: flex
+            justify-content: flex-end
+            height: 100px
+            +desc
+            font-size: 30px
+            
+        &_tabs
+            display: flex
+            list-style: none
+            li
+                margin-left: 42px
+                a
+                    +tah
+                    font-weight: 400
+                    color: $fontColor-dark
+                    &:hover
+                        color: $orange
+               
+
+@media (max-width: 1200px)
+    .header
+        .hero
+            padding-top: 130px
+            padding-bottom: 70px
+            &__title    
+                font-size: 30px
+                width: 750px
+        .navbar
+            &__menu
+                height: 70px
+                font-size: 20px
+@media (max-width: 992px)
+    .header
+        .hero
+            background-size: cover
+            &__title    
+                font-size: 24px
+                line-height: 36px
+                width: 600px
+            &__description
+                font-size: 15px
+                line-height: 25px
+                width: 550px
+            &-wrap
+                flex-direction: column
+                align-items: center
+                width: 250px
+                
+                &__feature-block
+                    margin-bottom: 30px
+                   
+
+        .navbar
+            &__menu
+                height: 50px
+                font-size: 15px 
+
+@media (max-width: 768px)
+    .header
+        .container
+            padding-right: 10px
+            padding-left: 10px
+        .hero
+            background-size: cover
+            
+            padding-top: 100px
+            padding-bottom: 50px
+            &__title    
+                font-size: 18px
+                line-height: 27px
+                width: 500px
+                margin-bottom: 30px
+            &__description
+                font-size: 12px
+                line-height: 18px
+                width: 400px
+            &-wrap 
+                &__feature-block
+                    margin-bottom: 30px
+                    width: 180px
+                    height: 120px
+                  
+        .navbar
+            &__menu
+                height: 40px
+                font-size: 12px
+            &_tabs
+                li
+                    margin-left: 10px    
+
+@media (max-width: 567px)
+    .header
+        
+        .hero
+            background-size: cover
+            padding-top: 100px
+            padding-bottom: 50px
+            &__title    
+                font-size: 15px
+                line-height: 1.5
+                width: 300px
+                margin-bottom: 30px
+            &__description
+                font-size: 12px
+                line-height: 18px
+                width: 300px
+            &-wrap
+                
+                &__feature-block
+                    margin-bottom: 30px
+                    width: 180px
+                    height: 120px
+                  
+
+        .navbar
+            .container
+                padding-right: 5px
+                padding-left: 5px
+            &__menu
+                justify-content: center
+                height: 40px
+                font-size: 12px
+            &_tabs
+                padding: 0
+                li
+                    margin-left: 5px    
+                             
+
+
+
+              
+
+
+                
+                
+
+   

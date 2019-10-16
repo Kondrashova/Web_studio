@@ -1,0 +1,118 @@
+@import "variable"
+.credo
+    .container
+        max-width: 1360px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative
+    z-index: 5
+    color: $fontColor-light
+    +desc
+    padding-top: 120px
+    padding-bottom: 150px
+    //background: url("../img/credo/credo-bg.png")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    background-size: 
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background: url("../img/credo/bg.png") center center
+        background-size: cover
+        z-index: 3
+    &-wrapTitle
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center           
+    &__title
+        display: flex
+        font-size: 48px
+        font-weight: 400
+        color: #fff
+        +title
+        text-transform: uppercase
+        width: 735px
+        text-align: center
+        line-height: 72px
+        letter-spacing: 2.5px
+        
+    &__description
+        +credo
+        font-size: 24px
+        line-height: 36px
+        letter-spacing: 1.2px
+        font-weight: 400
+        width: 1045px
+        text-align: center
+    .parallax-window
+        width: 100%
+        min-height: 400px
+        background: transparent
+   
+
+@media (max-width: 1200px)
+    .credo
+        &__title
+            width: 540px
+            font-size: 34px
+            line-height: 1.5
+
+        &__description    
+            font-size: 20px
+            line-height: 1.5
+            width: 650px
+
+@media (max-width: 992px)
+    .credo
+        .container
+            padding-right: 10px
+            padding-left: 10px
+        padding-top: 50px
+        padding-bottom: 50px
+        &__title
+            width: 430px
+            font-size: 26px
+            line-height: 1.5
+
+        &__description    
+            font-size: 18px
+            line-height: 1.5
+            width: 600px
+
+@media (max-width: 768px)
+    .credo
+        padding-top: 50px
+        padding-bottom: 50px
+        &__title
+            width: 320px
+            font-size: 18px
+            line-height: 1.5
+
+        &__description    
+            font-size: 12px
+            line-height: 1.5
+            width: 450px
+
+@media (max-width: 567px)
+    .credo
+        padding-top: 30px
+        padding-bottom: 50px
+        &__title
+            width: 270px
+            font-size: 15px
+            line-height: 1.5
+
+        &__description    
+            font-size: 12px
+            line-height: 1.2
+            width: 290px
+
+
+        

@@ -1,0 +1,151 @@
+@import "variable"
+.portfolio
+    .container
+        padding-left: 0
+        padding-right: 0
+    background-color: $bgPortf
+    max-width: 0 auto
+    color: $fontColor-light
+    &__wrap
+        display: flex
+        flex-direction: column
+        .title__block
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            text-align: center
+            height: 120px
+            +title
+            font-weight: 400
+            font-size: 26px
+            text-transform: uppercase
+            line-height: 72px
+            letter-spacing: 1.8px
+            &::before
+                position: absolute
+                content: "Our projects"
+                +tah
+                font-weight: 700
+                line-height: 60.23px
+                letter-spacing: 2.4px
+                font-size: 96px
+                color: $bgPorf-btn
+                text-transform: uppercase
+                top: 20%
+                //transform: translateY(-50%)
+                left: 25%
+                //transform: translateX(-50%)
+                
+            .portfolio__title
+                position: relative
+                margin: 0    
+        .img__block1
+            position: relative
+            max-width: 1500px
+            //left: -80px
+            display: flex
+            justify-content: space-between
+            //flex-wrap: nowrap 
+            .block1
+                display: flex
+                //border: 3px solid transparent
+                justify-content: space-between
+                width: 50%
+                cursor: pointer
+                &:hover
+                    box-shadow: 0px -3px 2px 0px rgba(255,185,99,0.78)
+            .img1
+                width: 100%
+            .img2
+                width: 50%
+
+
+        .img__block2
+            position: relative
+            max-width: 1500px
+            //left: -80px
+            display: flex
+            justify-content: space-between
+            
+            .block2
+                display: flex
+                //border: 3px solid transparent
+                justify-content: space-between
+                width: 25%
+                cursor: pointer
+                &:hover
+                   box-shadow: -0px 3px 2px 0px rgba(255,185,99,0.78)
+                .img2
+                    width: 100%
+        .btn__block
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 120px
+            .portfolio__btn
+                width: 240px
+                height: 66px
+                
+                font-size: 24px
+                background-color: $bgPorf-btn
+                &:hover
+                    background-color: $orange
+
+
+@media (max-width: 1499px)
+    .portfolio
+        .container
+        &__wrap
+            .title__block
+                &::before
+                    top: 20%
+                    left: 15%
+                
+@media (max-width: 992px)
+    .portfolio
+        .container
+        &__wrap
+            .title__block
+                font-size: 24px
+                &::before
+                    font-size: 70px
+                    top: 20%
+                    left: 10%                
+
+@media (max-width: 768px)
+    .portfolio
+        .container
+        &__wrap
+            .title__block
+                font-size: 18px
+                &::before
+                    font-size: 55px
+                    top: 20%
+                    left: 10%        
+            .btn__block
+                
+                .portfolio__btn
+                    width: 140px
+                    height: 40px
+                    font-size: 15px
+                
+@media (max-width: 567px)
+    .portfolio
+        .container
+        &__wrap
+            .title__block
+                font-size: 12px
+                &::before
+                    line-height: 30px
+                    letter-spacing: 1px
+                    font-size: 36px
+                    top: 35%
+                    left: 8%        
+            .btn__block
+                
+                .portfolio__btn
+                    width: 120px
+                    height: 30px
+                    font-size: 12px
+

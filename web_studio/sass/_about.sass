@@ -1,0 +1,167 @@
+@import "variable"
+.about
+    .container
+        //max-width: 1360px
+    position: relative
+    padding-top: 170px
+    padding-bottom: 250px
+    display: flex
+    &::before
+        position: absolute
+        content: "we"
+        +tah
+        font-weight: 700
+        letter-spacing: 17px
+        font-size: 340px
+        color: $gray
+        opacity: 0.19
+        text-transform: uppercase
+        top: 50px
+        left: 50%
+        transform: translateX(-50%)
+    .wrap__title
+        display: flex
+        width: 100%
+        margin-bottom: 160px
+        align-items: center
+        .about__title
+            width: 29%
+            font-size: 48px
+            font-family: HelveticaNeueCyr, sans-serif
+            font-weight: 700
+            letter-spacing: 2.4px
+            line-height: 30px    
+        .about__text
+            width: 71%
+            padding: 0 77px
+            +desc
+            font-size: 20px
+            font-weight: 400
+            letter-spacing: 1.2px
+            
+    .wrap__description
+        display: flex
+        justify-content: space-between
+        .description__block
+            min-height: 360px
+            padding: 12px 20px
+            &:hover
+                background-color: $orange
+                color: $fontColor-light
+            .about__img
+                min-height: 54px
+            .about__subtitle
+                font-family: Arial - Bold MT, sans-serif
+                font-size: 20px
+                letter-spacing: 1.2px    
+            .about__description
+                +arial
+                letter-spacing: 0.9px
+                font-size: 15px
+                line-height: 25.57px
+                max-width: 400px
+                min-height: 205px
+                height: auto
+            .prise__block
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .prise
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 18px
+                    color: $fontColor-light
+                    width: 131px
+                    height: 36px
+                    border: 2px solid #fff
+                .prise__link
+                    padding-right: 18px
+                
+
+@media (max-width: 1200px)
+    .about
+        padding-bottom: 170px
+        .wrap__description
+            .description__block
+                .about__description
+                    font-size: 13px
+                    line-height: 1.5
+
+@media (max-width: 992px)
+    .about
+        padding-top: 130px
+        padding-bottom: 70px
+        .wrap__title
+            .about__text
+                padding: 0 30px
+                font-size: 18px
+                line-height: 1.2     
+        .wrap__description
+            .description__block
+                .about__description
+                    
+                    font-size: 13px
+                    line-height: 1.5                        
+
+@media (max-width: 768px)
+    .about
+        .container
+            padding-right: 10px
+            padding-left: 10px
+        padding-top: 50px
+        &::before
+            font-weight: 700
+            letter-spacing: 17px
+            font-size: 200px
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+        .wrap__title
+            .about__title
+                font-size: 30px
+                line-height: 1.5
+            .about__text
+                padding: 0 30px
+                font-size: 18px
+                line-height: 1.2     
+        .wrap__description
+            .description__block
+                padding: 12px 7px
+                .about__description
+                    font-size: 11px
+                    line-height: 1.5           
+
+@media (max-width: 567px)
+    .about
+        .container
+            padding-right: 10px
+            padding-left: 10px
+        padding-top: 50px
+        &::before
+            font-size: 185px
+            top: 0
+        .wrap__title
+            flex-direction: column
+            align-items: center
+            margin-bottom: 50px
+            .about__title
+                width: 150px
+                font-size: 30px
+                line-height: 1.5
+            .about__text
+                padding: 0
+                width: 290px
+                font-size: 15px
+                line-height: 1.2     
+        .wrap__description
+            flex-direction: column
+            
+            .description__block
+                padding: 12px 7px
+                min-height: 320px
+                
+                .about__description
+                    font-size: 11px
+                    line-height: 1.5
+                    min-height: 100px    

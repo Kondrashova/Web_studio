@@ -1,0 +1,31 @@
+@import "variable"
+*
+  box-sizing: border-box
+.container
+  position: relative
+  z-index: 5
+  width: 100%
+  max-width: 1500px
+  padding-right: 70px
+  padding-left: 70px
+  margin-right: auto
+  margin-left: auto
+    
+.button
+  +title
+  border-radius: 20px
+  border: none
+  color: $fontColor-light
+  text-transform: uppercase
+  cursor: pointer
+  outline: none
+
+ul, li
+  list-style: none
+a
+  &:active 
+    text-decoration: none
+  &:link
+    text-decoration: none
+  &:visited 
+    text-decoration: none   

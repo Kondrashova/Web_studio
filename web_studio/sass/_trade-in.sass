@@ -1,0 +1,176 @@
+@import "variable"
+.trade-in
+    position: relative
+    padding: 50px 0
+    background: url("../img/trade_in/trade-bg.png") center center no-repeat
+    background-size: cover
+    color: $fontColor-light
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: #000000
+        opacity: 0.52
+        z-index: 3
+    &__bigwrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .trade-in__title
+            +title
+            font-size: 48px
+            text-transform: uppercase
+            font-weight: 800
+            margin-top: 0
+            margin-bottom: 70px
+        .trade-in__wrap
+            display: flex
+            .trade-in__block
+                max-width: 430px 
+                margin-right: 40px
+                &:nth-child(3)
+                    margin-right: 0     
+                .wrapper__subtitle
+                    display: flex
+                    justify-content: flex-start 
+                    align-items: center
+                    min-height: 67px
+                    .trade-in__subtitle
+                        margin-left: 15px
+                        +title
+                        font-size: 30px
+                        font-weight: 400
+                        text-transform: uppercase
+                        margin-bottom: 0  
+            .trade-in__description
+                +arial
+                font-size: 18px
+                font-weight: 400
+                letter-spacing: 0.9px
+                line-height: 30px
+                
+        .trade-in__btn
+            width: 330px
+            height: 64px
+            background-color: $orange
+            font-size: 24px
+            margin-top: 10px
+            &:hover
+                background-color: #00b9e7
+                
+
+
+@media (max-width: 1499px)
+    .trade-in
+        &__bigwrap
+            .trade-in__wrap
+                .trade-in__block
+                    .wrapper__subtitle
+                        min-height: 100px
+
+@media (max-width: 1200px)
+    .trade-in
+        &__bigwrap
+            .trade-in__title
+                font-size: 34px
+                margin-bottom: 20px
+            .trade-in__wrap
+                .trade-in__block
+                    .wrapper__subtitle
+                        min-height: 100px
+                        .trade-in__subtitle
+                            font-size: 24px
+                .trade-in__description
+                    font-size: 15px
+                    line-height: 1.2
+            .trade-in__btn
+                width: 250px
+                height: 50px
+                font-size: 18px
+                
+@media (max-width: 992px)
+    .trade-in
+        &__bigwrap
+            .trade-in__title
+                font-size: 34px
+                margin-bottom: 20px
+            .trade-in__wrap
+                .trade-in__block
+                    .wrapper__subtitle
+                        min-height: 100px
+                        .img__block
+                            width: 42px
+                            height: 38px
+
+                        .trade-in__subtitle
+                            font-size: 18px
+                .trade-in__description
+                    font-size: 15px
+                    line-height: 1.2
+            .trade-in__btn
+                width: 250px
+                height: 50px
+                font-size: 18px
+
+@media (max-width: 768px)
+    .trade-in
+        .container
+            padding-right: 10px
+            padding-left: 10px
+        &__bigwrap
+            .trade-in__title
+                font-size: 34px
+                margin-bottom: 20px
+            .trade-in__wrap
+                .trade-in__block
+                    .wrapper__subtitle
+                        min-height: 100px
+                        .img__block
+                            width: 42px
+                            height: 38px
+
+                        .trade-in__subtitle
+                            font-size: 15px
+                .trade-in__description
+                    font-size: 12px
+                    line-height: 1.2
+            .trade-in__btn
+                width: 160px
+                height: 30px
+                font-size: 12px
+
+@media (max-width: 567px)
+    .trade-in
+        .container
+            padding-right: 10px
+            padding-left: 10px
+        &__bigwrap
+            .trade-in__title
+                font-size: 24px
+                margin-bottom: 20px
+            .trade-in__wrap
+                flex-direction: column
+                .trade-in__block
+                    margin-right: 0
+                    .wrapper__subtitle
+                        min-height: 70px
+                        .img__block
+                            width: 42px
+                            height: 38px
+
+                        .trade-in__subtitle
+                            font-size: 15px
+                .trade-in__description
+                    font-size: 12px
+                    line-height: 1.2
+            .trade-in__btn
+                width: 160px
+                height: 30px
+                font-size: 12px
+
+
+

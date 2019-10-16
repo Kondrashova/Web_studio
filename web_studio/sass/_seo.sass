@@ -1,0 +1,137 @@
+@import "variable"
+.seo
+    padding: 90px 0
+    .container
+        &::before
+            position: absolute
+            content: "Be the first"
+            +tah
+            font-weight: 700
+            letter-spacing: 3.6px
+            font-size: 70px
+            color: #000
+            opacity: 0.19
+            text-transform: uppercase
+            top: 0
+            left: 70px
+        
+    &__bigwrap
+        display: flex
+        .seo__wrapper
+            display: flex
+            flex-direction: column
+            width: 810px
+            padding: 0 170px 0 54px
+            .seo__title
+                +title
+                font-size: 30px
+                text-transform: uppercase
+            .seo__text
+                max-width: 570px
+                +arial
+                font-size: 24px
+                line-height: 48px
+                letter-spacing: 1.2px   
+        .seo__block-img
+            display: flex
+            flex-direction: column    
+            .seo__img
+                margin-bottom: 39px
+   
+        
+@media (max-width: 1200px)
+    .seo
+        
+        &__bigwrap
+            .seo__wrapper
+                .seo__text
+                    font-size: 20px
+                    line-height: 1.5
+
+
+@media (max-width: 992px)
+    .seo
+        .container
+             &::before
+                font-weight: 700
+                letter-spacing: 3.6px
+                font-size: 50px
+                top: 5px
+                left: 70px
+
+        &__bigwrap
+            .seo__wrapper
+                padding-right: 50px
+                .seo__title
+                    font-size: 24px
+                    line-height: 1.5
+                .seo__text
+                    font-size: 20px
+                    line-height: 1.5
+
+@media (max-width: 768px)
+    .seo
+        padding: 50px 0
+        .container
+            padding-right: 10px
+            padding-left: 10px
+            &::before
+                font-weight: 700
+                letter-spacing: 3.6px
+                font-size: 40px
+                top: 5px
+                left: 30px
+
+        &__bigwrap
+            .seo__wrapper
+                padding-right: 50px
+                .seo__title
+                    font-size: 24px
+                    line-height: 1.5
+                .seo__text
+                    font-size: 18px
+                    line-height: 1.2
+            .seo__block-img
+               
+                .seo__img
+                    margin-bottom: 39px
+                    width: 150px
+                    height: auto    
+
+@media (max-width: 567px)
+    .seo
+        .container
+            padding-right: 10px
+            padding-left: 10px
+            &::before
+                font-weight: 700
+                letter-spacing: 2px
+                font-size: 28px
+                top: 10px
+                left: 90px
+
+        &__bigwrap
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .seo__wrapper
+                padding: 0
+                max-width: 300px
+                align-items: center
+                .seo__title
+                    text-align: center
+                    font-size: 18px
+                    line-height: 1.5
+                    width: 200px
+                .seo__text
+                    text-align: center
+                    max-width: 300px
+                    font-size: 12px
+                    line-height: 1.2
+            .seo__block-img
+                flex-direction: row
+                .seo__img
+                    margin-bottom: 39px
+                    margin-right: 10px
+                    width: 100px
+                    height: auto   
